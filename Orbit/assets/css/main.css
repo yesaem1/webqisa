@@ -1265,15 +1265,16 @@ section,
   height: auto;
   display: block;
 }
-.about .about-images-wrapper{
-    position: relative;
-    padding-bottom: 80px;
+
+.about .about-images-wrapper {
+  position: relative;
+  /* padding-bottom: 80px; */
 }
 
 .about .experience-badge {
   position: absolute;
-  bottom: -40px;
-  left: 20px;
+  bottom: -111px;
+  left: 46px;
   z-index: 5;
 
   /* background: var(--accent-color); */
@@ -1293,9 +1294,7 @@ section,
 
 @media (max-width: 768px) {
   .about .experience-badge {
-    left: 20px;
-    top: 20px;
-    padding: 16px 20px;
+    display: none;
   }
 }
 
@@ -1433,7 +1432,8 @@ section,
 
 @media (max-width: 576px) {
   .about .stats-row {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     gap: 20px;
     padding: 20px 0;
   }
@@ -1553,7 +1553,7 @@ section,
 
 @media (max-width: 768px) {
   .services {
-    padding: 64px 0;
+    padding: 0px 0;
   }
 }
 
@@ -2229,7 +2229,7 @@ section,
 # Why Us Section
 --------------------------------------------------------------*/
 .why-us {
-  padding: 80px 0;
+  padding: 15px 0;
   background-color: var(--background-color);
   position: relative;
 }
@@ -3408,6 +3408,11 @@ section,
 .contact .container {
   position: relative;
   z-index: 1;
+}
+
+.contact .container .row {
+  display: flex;
+  justify-content: center;
 }
 
 .contact .info-panel {
