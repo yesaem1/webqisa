@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="no-js">
 
 <head>
   <meta charset="utf-8">
@@ -12,8 +12,8 @@
     content="akupunktur padang, klinik akupunktur, akupunktur kecantikan, akupunktur facelift, bekam api">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon-32.png" rel="icon" type="image/png" sizes="32x32">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -49,11 +49,12 @@
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <img src="assets/img/logo-lengkap.png" width="577" height="433" alt="QISA Akupunktur" class="img-fluid">
+        <img src="assets/img/logo-lengkap.webp" alt="QISA Akupunktur" class="img-fluid" width="360" height="155"
+          decoding="async" fetchpriority="high">
       </a>
 
       <nav id="navmenu" class="navmenu">
-        <ul>
+        <ul id="navmenu-list">
           <li><a href="#hero" class="active">Beranda</a></li>
           <li><a href="#about">Tentang</a></li>
           <li><a href="#services">Layanan</a></li>
@@ -63,10 +64,14 @@
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#contact">Kontak</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <button type="button" class="mobile-nav-toggle d-xl-none" aria-label="Buka menu navigasi"
+          aria-expanded="false" aria-controls="navmenu-list">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
       </nav>
 
-      <a class="btn-getstarted" href="https://wa.me/628138957789" target="_blank">Booking WhatsApp</a>
+      <a class="btn-getstarted" href="https://wa.me/628138957789" target="_blank"
+        rel="noopener noreferrer">Booking WhatsApp</a>
 
     </div>
   </header>
@@ -96,7 +101,7 @@
                 dengan aman dan nyaman.</p>
 
               <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
-                <a href="https://wa.me/628138957789" target="_blank" class="cta-button">
+                <a href="https://wa.me/628138957789" target="_blank" rel="noopener noreferrer" class="cta-button">
                   <span>Booking Sekarang</span>
                   <i class="bi bi-arrow-right"></i>
                 </a>
@@ -169,16 +174,21 @@
             <div class="about-images-wrapper">
               <div class="image-main">
                 <!-- TODO: ganti dengan foto suasana klinik QISA -->
-                <img src="assets/img/about/suasana.jpg" width="2560" height="1600" alt="Suasana klinik QISA Akupunktur"
-                  class="img-fluid">
+                <img src="assets/img/about/suasana-960.webp"
+                  srcset="assets/img/about/suasana-640.webp 640w, assets/img/about/suasana-960.webp 960w"
+                  sizes="(max-width: 991px) calc(100vw - 24px), 576px" alt="Suasana klinik QISA Akupunktur"
+                  class="img-fluid" width="960" height="600" loading="lazy" decoding="async">
               </div>
               <div class="image-offset">
                 <!-- TODO: ganti dengan foto detail sesi terapi -->
-                <img src="assets/img/about/pasien2.jpg" width="2560" height="1600" alt="Detail sesi terapi akupunktur"
-                  class="img-fluid">
+                <img src="assets/img/about/pasien2-960.webp"
+                  srcset="assets/img/about/pasien2-640.webp 640w, assets/img/about/pasien2-960.webp 960w"
+                  sizes="(max-width: 991px) 1px, 334px" alt="Detail sesi terapi akupunktur" class="img-fluid"
+                  width="960" height="600" loading="lazy" decoding="async">
               </div>
               <div class="experience-badge">
-                <img src="assets/img/logo.webp" alt="Logo QISA" width="80" height="80" class="rounded-circle">
+                <img src="assets/img/logo.webp" alt="Logo QISA" width="80" height="80" class="rounded-circle"
+                  loading="lazy" decoding="async">
                 <!-- <span class="years">Q</span> -->
                 <span class="text">Filosofi<br>Logo QISA</span>
               </div>
@@ -239,7 +249,8 @@
               </div>
 
               <div class="action-buttons">
-                <a href="https://wa.me/628138957789" target="_blank" class="btn btn-primary-custom">
+                <a href="https://wa.me/628138957789" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-primary-custom">
                   Booking via WhatsApp <i class="bi bi-arrow-right"></i>
                 </a>
                 <div class="contact-info">
@@ -286,7 +297,7 @@
               <p>Menstimulasi titik-titik tubuh dengan jarum steril halus untuk mengoptimalkan fungsi tubuh,
                 meningkatkan sirkulasi, dan mendukung pemulihan alami. Cocok untuk nyeri otot, migrain, insomnia, dan
                 gangguan pencernaan.</p>
-              <a href="https://wa.me/628138957789" target="_blank" class="service-link">
+              <a href="https://wa.me/628138957789" target="_blank" rel="noopener noreferrer" class="service-link">
                 <span>Konsultasi Sekarang</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -306,7 +317,7 @@
               <h3>Akupuntur Kecantikan</h3>
               <p>Perawatan wajah alami tanpa bedah yang merangsang sirkulasi darah dan regenerasi kulit dari dalam.
                 Tersedia Akupuntur Kecantikan Umum dan Akupuntur Facelift (efek lifting alami tanpa operasi).</p>
-              <a href="https://wa.me/628138957789" target="_blank" class="service-link">
+              <a href="https://wa.me/628138957789" target="_blank" rel="noopener noreferrer" class="service-link">
                 <span>Konsultasi Sekarang</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -322,7 +333,7 @@
               <h3>Bekam Api</h3>
               <p>Terapi tradisional dengan kop bertekanan vakum dari panas, dilakukan sesuai prosedur aman oleh terapis
                 kompeten. Membantu melancarkan sirkulasi darah dan meredakan ketegangan otot.</p>
-              <a href="https://wa.me/628138957789" target="_blank" class="service-link">
+              <a href="https://wa.me/628138957789" target="_blank" rel="noopener noreferrer" class="service-link">
                 <span>Konsultasi Sekarang</span>
                 <i class="bi bi-arrow-right"></i>
               </a>
@@ -453,8 +464,11 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-otot">
               <div class="project-card">
                 <div class="image-wrapper">
-                  <img src="assets/img/kondisi/1.webp" width="1536" height="1024" alt="Nyeri otot dan sendi"
-                    class="img-fluid" loading="lazy">
+                  <img src="assets/img/kondisi/1.webp"
+                    srcset="assets/img/kondisi/1-480.webp 480w, assets/img/kondisi/1.webp 800w"
+                    sizes="(max-width: 767px) calc(100vw - 24px), (max-width: 1199px) calc(50vw - 36px), 416px"
+                    alt="Nyeri otot dan sendi" class="img-fluid" width="800" height="450" loading="lazy"
+                    decoding="async">
                   <span class="category-badge">Otot &amp; Sendi</span>
                 </div>
                 <div class="project-info">
@@ -467,8 +481,11 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-otot">
               <div class="project-card">
                 <div class="image-wrapper">
-                  <img src="assets/img/kondisi/2.webp" width="1254" height="1254"
-                    alt="Saraf terjepit dan cedera olahraga" class="img-fluid" loading="lazy">
+                  <img src="assets/img/kondisi/2.webp"
+                    srcset="assets/img/kondisi/2-480.webp 480w, assets/img/kondisi/2.webp 800w"
+                    sizes="(max-width: 767px) calc(100vw - 24px), (max-width: 1199px) calc(50vw - 36px), 416px"
+                    alt="Saraf terjepit dan cedera olahraga" class="img-fluid" width="800" height="450" loading="lazy"
+                    decoding="async">
                   <span class="category-badge">Otot &amp; Sendi</span>
                 </div>
                 <div class="project-info">
@@ -481,8 +498,11 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-saraf">
               <div class="project-card">
                 <div class="image-wrapper">
-                  <img src="assets/img/kondisi/3.webp" width="1254" height="1254" alt="Migrain dan sakit kepala"
-                    class="img-fluid" loading="lazy">
+                  <img src="assets/img/kondisi/3.webp"
+                    srcset="assets/img/kondisi/3-480.webp 480w, assets/img/kondisi/3.webp 800w"
+                    sizes="(max-width: 767px) calc(100vw - 24px), (max-width: 1199px) calc(50vw - 36px), 416px"
+                    alt="Migrain dan sakit kepala" class="img-fluid" width="800" height="450" loading="lazy"
+                    decoding="async">
                   <span class="category-badge">Saraf</span>
                 </div>
                 <div class="project-info">
@@ -495,8 +515,11 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-saraf">
               <div class="project-card">
                 <div class="image-wrapper">
-                  <img src="assets/img/kondisi/4.webp" width="1254" height="1254" alt="Pemulihan pasca stroke"
-                    class="img-fluid" loading="lazy">
+                  <img src="assets/img/kondisi/4.webp"
+                    srcset="assets/img/kondisi/4-480.webp 480w, assets/img/kondisi/4.webp 800w"
+                    sizes="(max-width: 767px) calc(100vw - 24px), (max-width: 1199px) calc(50vw - 36px), 416px"
+                    alt="Pemulihan pasca stroke" class="img-fluid" width="800" height="450" loading="lazy"
+                    decoding="async">
                   <span class="category-badge">Saraf</span>
                 </div>
                 <div class="project-info">
@@ -509,8 +532,11 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tidur">
               <div class="project-card">
                 <div class="image-wrapper">
-                  <img src="assets/img/kondisi/5.webp" width="1254" height="1254" alt="Insomnia dan gangguan tidur"
-                    class="img-fluid" loading="lazy">
+                  <img src="assets/img/kondisi/5.webp"
+                    srcset="assets/img/kondisi/5-480.webp 480w, assets/img/kondisi/5.webp 800w"
+                    sizes="(max-width: 767px) calc(100vw - 24px), (max-width: 1199px) calc(50vw - 36px), 416px"
+                    alt="Insomnia dan gangguan tidur" class="img-fluid" width="800" height="450" loading="lazy"
+                    decoding="async">
                   <span class="category-badge">Tidur &amp; Psikologis</span>
                 </div>
                 <div class="project-info">
@@ -523,8 +549,11 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-tidur">
               <div class="project-card">
                 <div class="image-wrapper">
-                  <img src="assets/img/kondisi/6.webp" width="1254" height="1254" alt="Stres dan kelelahan"
-                    class="img-fluid" loading="lazy">
+                  <img src="assets/img/kondisi/6.webp"
+                    srcset="assets/img/kondisi/6-480.webp 480w, assets/img/kondisi/6.webp 800w"
+                    sizes="(max-width: 767px) calc(100vw - 24px), (max-width: 1199px) calc(50vw - 36px), 416px"
+                    alt="Stres dan kelelahan" class="img-fluid" width="800" height="450" loading="lazy"
+                    decoding="async">
                   <span class="category-badge">Tidur &amp; Psikologis</span>
                 </div>
                 <div class="project-info">
@@ -537,8 +566,10 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-pencernaan">
               <div class="project-card">
                 <div class="image-wrapper">
-                  <img src="assets/img/kondisi/7.webp" width="1254" height="1254" alt="Maag dan GERD" class="img-fluid"
-                    loading="lazy">
+                  <img src="assets/img/kondisi/7.webp"
+                    srcset="assets/img/kondisi/7-480.webp 480w, assets/img/kondisi/7.webp 800w"
+                    sizes="(max-width: 767px) calc(100vw - 24px), (max-width: 1199px) calc(50vw - 36px), 416px"
+                    alt="Maag dan GERD" class="img-fluid" width="800" height="450" loading="lazy" decoding="async">
                   <span class="category-badge">Pencernaan</span>
                 </div>
                 <div class="project-info">
@@ -551,8 +582,10 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-wanita">
               <div class="project-card">
                 <div class="image-wrapper">
-                  <img src="assets/img/kondisi/8.webp" width="1254" height="1254" alt="Kesehatan wanita"
-                    class="img-fluid" loading="lazy">
+                  <img src="assets/img/kondisi/8.webp"
+                    srcset="assets/img/kondisi/8-480.webp 480w, assets/img/kondisi/8.webp 800w"
+                    sizes="(max-width: 767px) calc(100vw - 24px), (max-width: 1199px) calc(50vw - 36px), 416px"
+                    alt="Kesehatan wanita" class="img-fluid" width="800" height="450" loading="lazy" decoding="async">
                   <span class="category-badge">Kesehatan Wanita</span>
                 </div>
                 <div class="project-info">
@@ -565,8 +598,10 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-kulit">
               <div class="project-card">
                 <div class="image-wrapper">
-                  <img src="assets/img/kondisi/9.webp" width="1254" height="1254" alt="Kulit dan estetika"
-                    class="img-fluid" loading="lazy">
+                  <img src="assets/img/kondisi/9.webp"
+                    srcset="assets/img/kondisi/9-480.webp 480w, assets/img/kondisi/9.webp 800w"
+                    sizes="(max-width: 767px) calc(100vw - 24px), (max-width: 1199px) calc(50vw - 36px), 416px"
+                    alt="Kulit dan estetika" class="img-fluid" width="800" height="450" loading="lazy" decoding="async">
                   <span class="category-badge">Kulit &amp; Estetika</span>
                 </div>
                 <div class="project-info">
@@ -588,7 +623,8 @@
               dan pemeriksaan awal. Pada kondisi tertentu, pasien mungkin memerlukan kolaborasi dengan dokter atau
               tenaga kesehatan lain.</p>
             <div class="cta-buttons">
-              <a href="https://wa.me/628138957789" target="_blank" class="btn-cta-primary">Konsultasikan Keluhan Anda <i
+              <a href="https://wa.me/628138957789" target="_blank" rel="noopener noreferrer"
+                class="btn-cta-primary">Konsultasikan Keluhan Anda <i
                   class="bi bi-arrow-right"></i></a>
             </div>
           </div>
@@ -640,7 +676,8 @@
               </div>
 
               <div class="action-buttons">
-                <a href="https://wa.me/628138957789" target="_blank" class="btn-main">Booking Sekarang</a>
+                <a href="https://wa.me/628138957789" target="_blank" rel="noopener noreferrer"
+                  class="btn-main">Booking Sekarang</a>
                 <a href="#faq" class="btn-outline">Baca FAQ</a>
               </div>
             </div>
@@ -771,7 +808,8 @@
                 <h3>Apa Kata Pasien Kami</h3>
                 <p>Kepercayaan pasien adalah prioritas kami — ditopang oleh terapis bersertifikat dan prosedur yang
                   aman.</p>
-                <a href="https://wa.me/628138957789" target="_blank" class="btn-view-all">Konsultasi Sekarang <i
+                <a href="https://wa.me/628138957789" target="_blank" rel="noopener noreferrer"
+                  class="btn-view-all">Konsultasi Sekarang <i
                     class="bi bi-arrow-right"></i></a>
               </div>
             </div>
@@ -1211,7 +1249,7 @@
                     <span class="method-label">WhatsApp</span>
                     <span>08138957789</span>
 
-                    <a href="https://wa.me/628138957789" target="_blank"></a>
+                    <a href="https://wa.me/628138957789" target="_blank" rel="noopener noreferrer"></a>
                   </div>
                 </div>
 
@@ -1254,7 +1292,8 @@
               <div class="social-connect">
                 <span>Ikuti Kami</span>
                 <div class="social-icons">
-                  <a href="https://www.instagram.com/qisa_akupuntur_padang/" target="_blank" aria-label="Instagram">
+                  <a href="https://www.instagram.com/qisa_akupuntur_padang/" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram">
                     <i class="bi bi-instagram"></i>
                   </a>
                   <a href="https://wa.me/628138957789" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
@@ -1346,7 +1385,8 @@
           <div class="col-12">
             <div class="rounded-4 overflow-hidden shadow-sm" style="min-height:340px;">
               <iframe src="https://www.google.com/maps?q=Jl.%20S.%20Parman%20No.%20110%2C%20Padang&output=embed"
-                width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                title="Peta lokasi QISA Akupunktur di Jl. S. Parman No. 110, Padang" width="100%" height="340"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
         </div>
@@ -1364,17 +1404,19 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-info">
           <a href="index.html" class="logo d-flex align-items-center mb-4">
-            <img src="assets/img/logo-lengkap.png" width="577" height="433" alt="QISA Akupunktur" style="height:40px;">
+            <img src="assets/img/logo-lengkap.webp" alt="QISA Akupunktur" width="360" height="155"
+              style="height:40px; width:auto;" loading="lazy" decoding="async">
           </a>
           <p>Klinik akupunktur kesehatan &amp; kecantikan yang menghadirkan keseimbangan tubuh secara alami, dengan
             sentuhan premium dan profesional.</p>
 
           <div class="social-links d-flex mt-4">
-            <a href="https://www.instagram.com/qisa_akupuntur_padang/" target="_blank" aria-label="Instagram">
+            <a href="https://www.instagram.com/qisa_akupuntur_padang/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="https://wa.me/628138957789" target="_blank" aria-label="WhatsApp"><i
-                class="bi bi-whatsapp"></i></a>
+            <a href="https://wa.me/628138957789" target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
             <!-- <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a> -->
           </div>
         </div>
@@ -1394,7 +1436,8 @@
           <ul>
             <li><a href="#contact">Hubungi Kami</a></li>
             <li><a href="#faq">FAQ</a></li>
-            <li><a href="https://wa.me/628138957789" target="_blank">Booking WhatsApp</a></li>
+            <li><a href="https://wa.me/628138957789" target="_blank" rel="noopener noreferrer">Booking WhatsApp</a>
+            </li>
           </ul>
         </div>
 
@@ -1402,7 +1445,8 @@
           <div class="footer-newsletter">
             <h4>Info &amp; Promo</h4>
             <p>Ikuti Instagram kami untuk info promo dan tips kesehatan terbaru.</p>
-            <a href="https://www.instagram.com/qisa_akupuntur_padang/" target="_blank" aria-label="Instagram">
+            <a href="https://www.instagram.com/qisa_akupuntur_padang/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
               <i class="bi bi-instagram"></i>
             </a>
           </div>
@@ -1433,13 +1477,11 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/628138957789" target="_blank" class="wa-float d-flex align-items-center justify-content-center"
+  <a href="https://wa.me/628138957789" target="_blank" rel="noopener noreferrer"
+    class="wa-float d-flex align-items-center justify-content-center"
     style="position:fixed; right:20px; bottom:20px; width:56px; height:56px; border-radius:50%; background:#25D366; color:#fff; font-size:1.6rem; z-index:999; box-shadow:0 10px 25px rgba(0,0,0,.2);">
     <i class="bi bi-whatsapp"></i>
   </a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

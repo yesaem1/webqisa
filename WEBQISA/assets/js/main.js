@@ -26,11 +26,14 @@
    * Mobile nav toggle
    */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+  const mobileNavToggleIcon = mobileNavToggleBtn?.querySelector('i');
 
   function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavToggleBtn.classList.toggle('bi-list');
-    mobileNavToggleBtn.classList.toggle('bi-x');
+    const isActive = document.querySelector('body').classList.toggle('mobile-nav-active');
+    mobileNavToggleIcon?.classList.toggle('bi-list', !isActive);
+    mobileNavToggleIcon?.classList.toggle('bi-x', isActive);
+    mobileNavToggleBtn?.setAttribute('aria-expanded', String(isActive));
+    mobileNavToggleBtn?.setAttribute('aria-label', isActive ? 'Tutup menu navigasi' : 'Buka menu navigasi');
   }
   if (mobileNavToggleBtn) {
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
@@ -61,16 +64,6 @@
   });
 
   /**
-   * Preloader
-   */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
-
-  /**
    * Scroll top button
    */
   let scrollTop = document.querySelector('.scroll-top');
@@ -95,14 +88,31 @@
    * Animation on scroll function and init
    */
   function aosInit() {
-    AOS.init({
-      duration: 600,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    });
+    const documentElement = document.documentElement;
+
+    if (typeof window.AOS === 'undefined') {
+      documentElement.classList.add('no-js');
+      return;
+    }
+
+    try {
+      documentElement.classList.remove('no-js');
+      window.AOS.init({
+        duration: 600,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+      });
+    } catch (error) {
+      documentElement.classList.add('no-js');
+    }
   }
-  window.addEventListener('load', aosInit);
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', aosInit, { once: true });
+  } else {
+    aosInit();
+  }
 
   /**
    * Initiate glightbox
